@@ -1,4 +1,4 @@
-'use client'
+
 import image from "./assets/images/01.webp"
 import image2 from "./assets/images/02.webp"
 import image3 from "./assets/images/03.webp"

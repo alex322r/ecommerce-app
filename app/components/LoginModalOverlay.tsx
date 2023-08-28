@@ -25,7 +25,7 @@ export default function LoginModalOverlay({ closeLoginModal }: props) {
 
 
     return (
-        <div onClick={closeLoginModal} className="flex top-0 right-0 items-center justify-center fixed w-full h-screen bg-black bg-opacity-60" >
+        <div onClick={closeLoginModal} className="flex z-50 top-0 right-0 items-center justify-center fixed w-full h-screen bg-black bg-opacity-60" >
             <LoginModal closeLoginModal={closeLoginModal} />
         </div>
     )

@@ -1,5 +1,3 @@
-'use client'
-
 import './globals.css'
 import type { Metadata } from 'next'
 import { Lato } from 'next/font/google'
@@ -20,17 +18,17 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
 
-  const { showLoginModal, closeLoginModal, openLoginModal } = useLoginModal()
+
 
 
 
   return (
     <html lang="en">
       <body className={lato.className}>
-        <HeaderPage showLoginModal={showLoginModal} openLoginModal={openLoginModal} />
+        <HeaderPage />
         {children}
         <Footer />
-        {showLoginModal && <LoginModalOverlay closeLoginModal={closeLoginModal} />}
+
       </body>
 
     </html>

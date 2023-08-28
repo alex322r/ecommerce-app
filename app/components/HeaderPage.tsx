@@ -1,10 +1,19 @@
-import Link from "next/link"
+'use client'
+import useLoginModal from "../hooks/useLoginModal"
 import NavBar from "./NavBar"
+import LoginModalOverlay from "./LoginModalOverlay"
 
-export default function HeaderPage({ showLoginModal, openLoginModal }: { showLoginModal: boolean, openLoginModal: () => void }) {
+export default function HeaderPage() {
+  const { showLoginModal, closeLoginModal, openLoginModal } = useLoginModal()
   return (
-    <header>
-      <NavBar showLoginModal={showLoginModal} openLoginModal={openLoginModal} ></NavBar>
-    </header>
+    <>
+      <header>
+        <NavBar showLoginModal={showLoginModal} openLoginModal={openLoginModal} ></NavBar>
+      </header>
+      {
+        showLoginModal && <LoginModalOverlay closeLoginModal={closeLoginModal} />
+      }
+    </>
+
   )
 }

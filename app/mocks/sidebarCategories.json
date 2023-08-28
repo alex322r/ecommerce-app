@@ -1,0 +1,72 @@
+[
+    {
+        "label": "Hot Sale",
+        "new": false,
+        "sale": true
+    },
+    {
+        "label": "Promociones",
+        "new": false,
+        "sale": false
+    },
+    {
+        "label": "Electrohogar",
+        "new": false,
+        "sale": false
+    },
+    {
+        "label": "Tecnologia",
+        "new": false,
+        "sale": true
+    },
+    {
+        "label": "Mujer",
+        "new": false,
+        "sale": false
+    },
+    {
+        "label": "Hombre",
+        "new": false,
+        "sale": false
+    },
+    {
+        "label": "Accesorios Moda",
+        "new": false,
+        "sale": false
+    },
+    {
+        "label": "Muebles y Organización",
+        "new": false,
+        "sale": true
+    },
+    {
+        "label": "Dormitorio",
+        "new": false,
+        "sale": true
+    },
+    {
+        "label": "Niños y Juguetes",
+        "new": false,
+        "sale": true
+    },
+    {
+        "label": "Zapatos",
+        "new": false,
+        "sale": false
+    },
+    {
+        "label": "Deportes y aire libre",
+        "new": false,
+        "sale": true
+    },
+    {
+        "label": "Belleza y Salud",
+        "new": false,
+        "sale": false
+    },
+    {
+        "label": "Cocina y menaje",
+        "new": true,
+        "sale": false
+    }
+]
