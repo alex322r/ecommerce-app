@@ -1,0 +1,22 @@
+a.facebook,
+a.instagram {
+
+    display: inline-flex;
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    background-color: #4a4a4a;
+    background-size: 15px;
+    background-position: 50%;
+    background-repeat: no-repeat;
+    align-items: center;
+}
+
+a.instagram {
+    background-image: url(../assets/icons/instagram.svg);
+}
+
+a.facebook {
+    background-image: url(../assets/icons/facebook.svg);
+
+}

@@ -1,0 +1,53 @@
+.sliderContainer {
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.sliderContainer:hover a {
+    display: flex;
+}
+
+.arrow:hover {
+    opacity: .4;
+}
+
+.sliderItem {
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition: all ease-in .5s;
+
+    &.active {
+        position: relative;
+        opacity: 1;
+        transform: translate(0);
+    }
+
+    &.last {
+        transform: translateX(-100%);
+    }
+
+    &.next {
+        transform: translateX(100%);
+    }
+
+}
+
+.dot {
+
+    background-color: #b2b2b2;
+    width: 0.5rem;
+    height: 0.5rem;
+    opacity: 1;
+    border-radius: 50%;
+    border-width: 0;
+    margin: 1.625rem 0.25rem 0;
+    cursor: pointer;
+
+    &.activeDot {
+        background-color: #939393;
+        transform: scale(1.375);
+    }
+}

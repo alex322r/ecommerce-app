@@ -1,0 +1,123 @@
+.sideBarDesktop {
+    position: fixed;
+    width: auto;
+    display: flex;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    z-index: 999;
+}
+
+.sideBarDesktopContainer {
+    width: 300px;
+    max-width: 300px;
+    background: #fff;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, .2);
+    font-weight: 400;
+    z-index: 1;
+}
+
+.sideBarDesktopTitle {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px 13px 16px 24px;
+    height: 56px;
+    box-sizing: border-box;
+    background: #f7f7f7;
+    border-top: 4px solid #ff6200;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, .1);
+}
+
+.sideBarDesktopText {
+    color: #ff6200;
+    font-size: 19px;
+    line-height: 22.8px;
+    font-weight: 700;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+.sideBarDesktopCloseIcon {
+    background-image: url(../assets/icons/close.svg);
+    background-repeat: no-repeat;
+    width: 32px;
+    height: 32px;
+    background-size: 13.33px;
+    background-position: 50%;
+    display: block;
+    cursor: pointer;
+}
+
+.sideBarDesktopScrollWrapper {
+    overflow-y: scroll;
+    height: calc(100vh - 56px);
+    margin-bottom: 60px;
+
+}
+
+.sideBarDesktopModuleBox {
+    position: relative;
+    padding: 16px 0;
+
+    ::after {
+        position: absolute;
+        bottom: 0;
+        width: 268px;
+        left: 50%;
+        transform: translateX(-50%);
+        content: "";
+        height: 3px;
+        background-color: #e9e9e9;
+    }
+}
+
+.sideBarDesktopCategoryWrapper {
+    padding: 0 16px;
+}
+
+.sideBarDesktopFirstLevelCategories {
+    display: flex;
+    text-decoration: none;
+    align-items: center;
+    justify-content: space-between;
+    padding: 18px 12.45px 19px 12px !important;
+    color: #0c2941;
+    box-sizing: border-box;
+    height: 56px;
+    cursor: pointer;
+    overflow: hidden;
+}
+
+.sideBarDesktopFirstLevelCategoriesTitle {
+    font-size: 16px;
+    line-height: 19.2px;
+    color: inherit;
+    display: flex;
+    align-items: center;
+}
+
+.sideBarDesktopFirstLevelCategoriesLabel {
+    padding: 3px 6px;
+    background: #0c2941;
+    border-radius: 8px;
+    margin-left: 10px;
+    margin-right: 10px;
+    color: #fff;
+    font-size: 10px;
+    line-height: 12px;
+    font-weight: 700;
+    letter-spacing: .4px;
+}
+
+.sideBarDesktopBrandLogo {
+    padding: 16px 32px;
+    display: flex;
+
+    &img {
+        max-width: 130px;
+        height: 100%;
+    }
+}

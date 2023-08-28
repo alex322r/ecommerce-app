@@ -1,0 +1,67 @@
+.hamburgerIcon {
+    display: block;
+    position: relative;
+    background-color: #FFF;
+    width: 20px;
+    height: 2.5px;
+    border-radius: 9999px;
+    transition: all .1s;
+
+    &.active {
+        transform: rotate(45deg);
+        width: 20px;
+        height: 3px;
+    }
+
+    &.active::after {
+        transform: translate3d(0, -8px, 0) rotate(270deg);
+        width: 20px;
+        height: 3px;
+    }
+
+    &.active::before {
+        transform: translate3d(0, 5 px, 0) rotate(-45deg);
+        opacity: 0;
+    }
+
+}
+
+.hamburgerIcon::after,
+.hamburgerIcon::before {
+    display: block;
+    position: absolute;
+    content: '';
+    background-color: #FFF;
+    width: 20px;
+    height: 2.5px;
+    border-radius: 9999px;
+}
+
+.hamburgerIcon::after {
+    bottom: -8px;
+}
+
+.hamburgerIcon::before {
+    top: -8px;
+}
+
+.popOverOverlay {
+    position: fixed;
+    background-color: rgba(0, 0, 0, 0.6);
+    width: 100vw;
+    height: 100vh;
+    z-index: 5999;
+}
+
+.loginButton {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    height: 72px;
+    cursor: pointer;
+    padding: 0 16px 0 0;
+
+    &:hover {
+        color: rgb(253, 186, 116);
+    }
+}
