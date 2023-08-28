@@ -1,9 +1,10 @@
 /* eslint-disable @next/next/no-img-element */
-import { useEffect } from "react"
+import React, { useEffect, useState } from "react"
 import style from "./SideBar.module.css"
 import sideBarCategories from "../mocks/sidebarCategories.json"
 import appStyle from "../App.module.css"
 import SideBarListElement from "./SideBarListElement"
+import SideBarList from "./SideBarList"
 
 interface props {
   closeSideBar: () => void
@@ -25,6 +26,15 @@ export default function SideBar({ closeSideBar }: props) {
     }
   }, [closeSideBar])
 
+  const [showContent, setShowContent] = useState(false)
+  const [content, setContent] = useState('Alexis')
+
+  const handleOnMouseOver = (e :React.MouseEvent<HTMLDivElement>) => {
+    
+  }
+
+
+
   return (
     <div className={style.sideBarDesktop}>
       <div className={style.sideBarDesktopContainer}>
@@ -37,7 +47,7 @@ export default function SideBar({ closeSideBar }: props) {
           <div className={style.sideBarDesktopModuleBox}>
             {
               sideBarCategories.map(category => {
-                return (<SideBarListElement key={category.label} label={category.label} sale={category.sale} isNew={category.new} />)
+                return (<SideBarListElement key={category.label} handleOnMouseOver={handleOnMouseOver} label={category.label} sale={category.sale} isNew={category.new} />)
               })
             }
           </div>
@@ -46,7 +56,8 @@ export default function SideBar({ closeSideBar }: props) {
           </a>
         </div>
       </div>
-      <div className="mt-[59px] bg-white h-screen rounded-tr-[20px]">hola</div>
+      {showContent && <SideBarList content={content} /> }
+      
     </div>
   )
 }
