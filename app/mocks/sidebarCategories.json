@@ -1,71 +1,85 @@
 [
     {
         "label": "Hot Sale",
+        "icon": "https://images.falabella.com/v3/assets/bltf4ed0b9a176c126e/blte1aec25256fb38dd/62c7356eb8a7f1380fcd15c6/icliquidacion.svg",
         "new": false,
         "sale": true
     },
     {
         "label": "Promociones",
+        "icon": "https://images.falabella.com/v3/assets/bltf4ed0b9a176c126e/blte1aec25256fb38dd/62c7356eb8a7f1380fcd15c6/icliquidacion.svg",
         "new": false,
         "sale": false
     },
     {
         "label": "Electrohogar",
+        "icon": "https://images.falabella.com/v3/assets/bltf4ed0b9a176c126e/blte1aec25256fb38dd/62c7356eb8a7f1380fcd15c6/icliquidacion.svg",
         "new": false,
         "sale": false
     },
     {
         "label": "Tecnologia",
+        "icon": "https://images.falabella.com/v3/assets/bltf4ed0b9a176c126e/blte1aec25256fb38dd/62c7356eb8a7f1380fcd15c6/icliquidacion.svg",
         "new": false,
         "sale": true
     },
     {
         "label": "Mujer",
+        "icon": "https://images.falabella.com/v3/assets/bltf4ed0b9a176c126e/blte1aec25256fb38dd/62c7356eb8a7f1380fcd15c6/icliquidacion.svg",
         "new": false,
         "sale": false
     },
     {
         "label": "Hombre",
+        "icon": "https://images.falabella.com/v3/assets/bltf4ed0b9a176c126e/blte1aec25256fb38dd/62c7356eb8a7f1380fcd15c6/icliquidacion.svg",
         "new": false,
         "sale": false
     },
     {
         "label": "Accesorios Moda",
+        "icon": "https://images.falabella.com/v3/assets/bltf4ed0b9a176c126e/blte1aec25256fb38dd/62c7356eb8a7f1380fcd15c6/icliquidacion.svg",
         "new": false,
         "sale": false
     },
     {
         "label": "Muebles y Organización",
+        "icon": "https://images.falabella.com/v3/assets/bltf4ed0b9a176c126e/blte1aec25256fb38dd/62c7356eb8a7f1380fcd15c6/icliquidacion.svg",
         "new": false,
         "sale": true
     },
     {
         "label": "Dormitorio",
+        "icon": "https://images.falabella.com/v3/assets/bltf4ed0b9a176c126e/blte1aec25256fb38dd/62c7356eb8a7f1380fcd15c6/icliquidacion.svg",
         "new": false,
         "sale": true
     },
     {
         "label": "Niños y Juguetes",
+        "icon": "https://images.falabella.com/v3/assets/bltf4ed0b9a176c126e/blte1aec25256fb38dd/62c7356eb8a7f1380fcd15c6/icliquidacion.svg",
         "new": false,
         "sale": true
     },
     {
         "label": "Zapatos",
+        "icon": "https://images.falabella.com/v3/assets/bltf4ed0b9a176c126e/blte1aec25256fb38dd/62c7356eb8a7f1380fcd15c6/icliquidacion.svg",
         "new": false,
         "sale": false
     },
     {
         "label": "Deportes y aire libre",
+        "icon": "https://images.falabella.com/v3/assets/bltf4ed0b9a176c126e/blte1aec25256fb38dd/62c7356eb8a7f1380fcd15c6/icliquidacion.svg",
         "new": false,
         "sale": true
     },
     {
         "label": "Belleza y Salud",
+        "icon": "https://images.falabella.com/v3/assets/bltf4ed0b9a176c126e/blte1aec25256fb38dd/62c7356eb8a7f1380fcd15c6/icliquidacion.svg",
         "new": false,
         "sale": false
     },
     {
         "label": "Cocina y menaje",
+        "icon": "https://images.falabella.com/v3/assets/bltf4ed0b9a176c126e/blte1aec25256fb38dd/62c7356eb8a7f1380fcd15c6/icliquidacion.svg",
         "new": true,
         "sale": false
     }

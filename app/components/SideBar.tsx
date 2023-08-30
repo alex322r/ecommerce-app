@@ -10,6 +10,13 @@ interface props {
   closeSideBar: () => void
 }
 
+interface SideBarCategories {
+  label: string
+  icon: string
+  sale: boolean
+  new: boolean
+}
+
 export default function SideBar({ closeSideBar }: props) {
   useEffect(() => {
     const $body = document.querySelector("body")
@@ -27,10 +34,26 @@ export default function SideBar({ closeSideBar }: props) {
   }, [closeSideBar])
 
   const [showContent, setShowContent] = useState(false)
-  const [content, setContent] = useState('Alexis')
+  const [content, setContent] = useState<SideBarCategories>({
+    label: "",
+    icon: "",
+    sale: false,
+    new: false
+  })
 
-  const handleOnMouseOver = (e :React.MouseEvent<HTMLDivElement>) => {
-    
+  const handleOnMouseOver = (e: React.MouseEvent<HTMLDivElement>) => {
+    setShowContent(true)
+    selectContent(e.currentTarget)
+
+  }
+
+  const selectContent = (element: HTMLDivElement) => {
+    const content = sideBarCategories.find(category => {
+      return category.label === element.dataset.label
+
+    })
+    if (!content) return
+    setContent(content)
   }
 
 
@@ -47,7 +70,7 @@ export default function SideBar({ closeSideBar }: props) {
           <div className={style.sideBarDesktopModuleBox}>
             {
               sideBarCategories.map(category => {
-                return (<SideBarListElement key={category.label} handleOnMouseOver={handleOnMouseOver} label={category.label} sale={category.sale} isNew={category.new} />)
+                return (<SideBarListElement key={category.label} handleOnMouseOver={handleOnMouseOver} label={category.label} icon={category.icon} sale={category.sale} isNew={category.new} />)
               })
             }
           </div>
@@ -56,8 +79,8 @@ export default function SideBar({ closeSideBar }: props) {
           </a>
         </div>
       </div>
-      {showContent && <SideBarList content={content} /> }
-      
+      {showContent && <SideBarList content={content} />}
+
     </div>
   )
 }
