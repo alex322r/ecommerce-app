@@ -6,7 +6,7 @@ import image4 from "./assets/images/04.webp"
 import image5 from "./assets/images/05.webp"
 import image6 from "./assets/images/06.webp"
 import DaylyOffert from "./components/DaylyOffert"
-import DraggableWindow from "./components/Draggable"
+
 
 
 import ProductsSlider from "./components/ProductsSlider"

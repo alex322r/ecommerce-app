@@ -26,6 +26,8 @@ export default function SideBar({ closeSideBar }: props) {
     $overlay.addEventListener("click", closeSideBar)
     $overlay.classList.add(appStyle.overlay)
     $body?.appendChild($overlay)
+    setSideBarTranslateCompleted(true)
+
     return () => {
       $body?.classList.remove(appStyle.HamburguerBtnNavigationOpen)
       $body?.removeChild($overlay)
@@ -40,11 +42,11 @@ export default function SideBar({ closeSideBar }: props) {
     sale: false,
     new: false
   })
+  const [sideBarTranslateCompleted, setSideBarTranslateCompleted] = useState(false)
 
   const handleOnMouseOver = (e: React.MouseEvent<HTMLDivElement>) => {
     setShowContent(true)
     selectContent(e.currentTarget)
-
   }
 
   const selectContent = (element: HTMLDivElement) => {
@@ -59,7 +61,7 @@ export default function SideBar({ closeSideBar }: props) {
 
 
   return (
-    <div className={style.sideBarDesktop}>
+    <div className={`${style.sideBarDesktop} ${sideBarTranslateCompleted ? style.completed : ''}`} >
       <div className={style.sideBarDesktopContainer}>
         <div className={style.sideBarDesktopTitle}>
           <div className={style.sideBarDesktopText}>¡Hola!</div>

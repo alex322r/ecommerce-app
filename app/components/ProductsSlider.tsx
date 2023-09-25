@@ -2,7 +2,7 @@
 
 import useSlider from "../hooks/useSlider"
 import useSplitProducts from "../hooks/useSplitProducts"
-import { type Product } from "../types/product"
+
 import { ProductSliderArrowLeft, ProductSliderArrowRight } from "./ProductSliderArrows"
 import ProductSliderContainer from "./ProductsSliderContainer"
 import style from "./Slider.module.css"

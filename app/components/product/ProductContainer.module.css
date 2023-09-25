@@ -1,0 +1,17 @@
+.rouleteProductImage {
+    position: relative;
+    margin: 0 8px;
+    outline: none;
+    height: 45px;
+    &.active::before {
+        content: '';
+        background-color: #FF6200;
+        z-index:1 ;
+        position: absolute;
+        height: 3px;
+        left: 0;
+        right: 0;
+        bottom: 0;
+    }
+
+}

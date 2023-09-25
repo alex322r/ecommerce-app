@@ -13,7 +13,7 @@ interface props {
 import PopOver from "./PopOver"
 export default function LoginButton({ showPopOver, openPopOver, closePopOver, openLoginModal }: props) {
 
-    const handleOnMouseOver = (e: React.MouseEvent<HTMLDivElement, MouseEvent> | React.TouchEvent<HTMLDivElement>) => {
+    const handleOnMouseOver = (e: React.MouseEvent<HTMLDivElement, MouseEvent>) => {
         e.stopPropagation()
         openPopOver()
     }
