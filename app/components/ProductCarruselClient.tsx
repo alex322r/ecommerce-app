@@ -2,6 +2,7 @@
 import { CSSProperties, useState } from "react"
 
 import useSplitFetchedProducts from "../hooks/useSplitFetchedProducts"
+import ProductCarruselCard from "./ProductCarruselCard"
 
 export function LeftArrow() {
     return (
@@ -83,8 +84,14 @@ export default function ProductCarruselClient() {
                             products?.map((product) => {
                                 const key = product[0].id
                                 return (
-                                    <div className="flex h-auto mb-[6px]  min-w-[1237px] max-w-[1237px] " key={key} >
-                                        {JSON.stringify(product, null, 2)}
+                                    <div className="flex h-auto mb-[6px] min-w-[1237px] max-w-[1237px] " key={key} >
+                                        {
+                                            product.map((item) => {
+                                                return (
+                                                    <ProductCarruselCard key={item.id} product={item} />
+                                                )
+                                            })
+                                        }
                                     </div>
                                 )
                             })
@@ -101,6 +108,15 @@ export default function ProductCarruselClient() {
 
             </div>
             <div className="flex">
+                {
+                    products?.map((product, i) => {
+                        return (
+                            <div onClick={() => setIndex(i)} key={product[0].id} className={`w-[8px] h-[8px] m-[3.5px] rounded-full cursor-pointer ${index === i ? 'bg-orange-500' : 'bg-slate-200'}`}>
+
+                            </div>
+                        )
+                    })
+                }
 
             </div>
         </div>

@@ -1,0 +1,15 @@
+.card {
+    background-color: #fff;
+
+    &:not(:first-child)::before {
+        content: '';
+        display: block;
+        position: absolute;
+        top: 9.4183%;
+        width: .6px;
+        background-color: #f0f0f0;
+        height: 71.1911%;
+
+    }
+
+}
