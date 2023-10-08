@@ -27,7 +27,7 @@ body {
   background-color: #fff;
 }
 
-footer::before {
+footer.main::before {
   content: '';
   background-color: #bfc4c9;
   display: flex;

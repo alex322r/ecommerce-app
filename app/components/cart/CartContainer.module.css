@@ -1,0 +1,37 @@
+.cartPageContainer {
+    max-width: 1280px;
+
+    padding: 190px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-areas:
+        'cart os'
+        'list os';
+    ;
+
+
+}
+
+.emptyCart {
+    grid-column: span 12;
+    grid-area: 'cart os';
+}
+
+.cartList {
+    grid-column: span 8;
+    grid-area: 'cart';
+}
+
+@media (min-width: 1440px) {
+    .cartPageContainer {
+        padding: 20px 0;
+        gap: 32px;
+
+    }
+
+}
+
+.next {
+    height: 100vh;
+}

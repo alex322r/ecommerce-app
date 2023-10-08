@@ -71,8 +71,8 @@ export default function ProductCarruselClient() {
 
 
     return (
-        <div className="flex w-full flex-col items-center">
-            <div className="relative flex w-full">
+        <div className="flex w-full flex-col items-center bg-transparent">
+            <div className="relative flex w-full bg-white">
                 <ProductCarruselArrow onClick={prevSlide} >
                     <LeftArrow />
 
@@ -84,7 +84,7 @@ export default function ProductCarruselClient() {
                             products?.map((product) => {
                                 const key = product[0].id
                                 return (
-                                    <div className="flex h-auto mb-[6px] min-w-[1237px] max-w-[1237px] " key={key} >
+                                    <div className="flex flex-1  h-auto mb-[6px] min-w-[1237px] max-w-[1237px] " key={key} >
                                         {
                                             product.map((item) => {
                                                 return (
@@ -107,11 +107,11 @@ export default function ProductCarruselClient() {
                 </ProductCarruselArrow>
 
             </div>
-            <div className="flex">
+            <div className="flex mt-2 ">
                 {
                     products?.map((product, i) => {
                         return (
-                            <div onClick={() => setIndex(i)} key={product[0].id} className={`w-[8px] h-[8px] m-[3.5px] rounded-full cursor-pointer ${index === i ? 'bg-orange-500' : 'bg-slate-200'}`}>
+                            <div onClick={() => setIndex(i)} key={product[0].id} className={`w-[8px] h-[8px] m-[3.5px] rounded-full cursor-pointer ${index === i ? 'bg-orange-500' : 'bg-slate-500'}`}>
 
                             </div>
                         )

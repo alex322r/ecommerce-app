@@ -6,7 +6,7 @@ import style from "./Footer.module.css"
 export default function Footer() {
 
   return (
-    <footer className="bg-[#1e364b]">
+    <footer className="bg-[#1e364b] main">
       <section className=" flex py-10 mx-10">
         <div className=" max-w-[1248px] flex w-full mx-auto" >
           {
