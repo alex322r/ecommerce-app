@@ -20,20 +20,35 @@ export default function NavBar({ openLoginModal, showLoginModal }: { openLoginMo
 
   return (
     <nav onMouseOver={handleOnMouseOver} className=' bg-orange-600'>
-      <ul className="flex w-full text-white">
-        <li className="bg-orange-400 flex flex-col flex-none text-2xl font-bold rounded-tr-full rounded-br-full">
-          <Link className="px-6 py-5" href='/'>Ecommerce.com</Link>
-        </li>
-        <li className="flex flex-none items-center px-4">
-          <MenuButton showSideBar={showSideBar} openSideBar={openSideBar} />
-          {
-            showSideBar && <SideBar closeSideBar={closeSideBar} />
-          }
-        </li>
+      <ul className="flex flex-col md:flex-row w-full text-white">
+        <div className="flex flex-row">
+          <li className="bg-orange-400 flex flex-col flex-none text-2xl font-bold rounded-tr-full rounded-br-full">
+            <Link className="px-6 py-5" href='/'>Ecommerce.com</Link>
+          </li>
+          <li className="flex flex-none items-center px-4">
+            <MenuButton showSideBar={showSideBar} openSideBar={openSideBar} />
+            {
+              showSideBar && <SideBar closeSideBar={closeSideBar} />
+            }
+          </li>
+          <li className=" list-item md:hidden">
+            <ul className="h-full">
+              <div className="h-full">
+                <li className="h-full">
+                  <p className="flex items-center  underline font-bold mr-1 text-[#33363d] h-full text-sm leading-4 ">
+                    Inicia sesion
+                  </p>
+                </li>
+                <li></li>
+              </div>
+            </ul>
+          </li>
+        </div>
+
         <li className="flex items-center flex-auto mr-6">
           <SearchBar />
         </li>
-        <li className="flex-none">
+        <li className="flex-none hidden md:list-item ">
           <div className="flex h-full">
             <ul className="flex font-bold text-lg items-center">
               <li className="flex items-center relative h-4/6 border-r-[.5px] border-gray-300">

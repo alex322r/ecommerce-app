@@ -53,7 +53,7 @@ export default function Footer() {
         <div className="flex w-full justify-between mx-10 pt-6 pb-10 max-w-[1248px] border-t-[1px] border-[#495867]">
           <div className="text-white text-[12px] flex flex-col">
             <span className=" font-bold">© TODOS LOS DERECHOS RESERVADOS</span>
-            <span>Ecommerce.com S.A.C Av. Santa Cruz 361, Piso 5, Miraflores, Lima, Perú.</span>
+            <span>Ecommerce.com Alexis Rodriguez.</span>
           </div>
           <a className=" w-16 h-14"></a>
         </div>
