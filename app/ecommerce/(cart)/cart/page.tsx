@@ -7,9 +7,10 @@ import { useState } from "react"
 import CartContainer from "@/app/components/cart/CartContainer"
 import { Product } from "@/app/types/product"
 import products from "../../../mocks/products.json"
+import CartList from "@/app/components/cart/CartList"
 export default function CartPage() {
 
-    const [cart, setCart] = useState<Product[] | []>([])
+    const [cart, setCart] = useState<Product[] | []>(products)
 
     return (
         <div className="flex flex-col  bg-[#eee] h-[calc(100vh-72px)] ">
@@ -18,9 +19,7 @@ export default function CartPage() {
                     {
 
                         cart.length > 0 ?
-                            <div>
-                                CART PRODUCTS
-                            </div>
+                            <CartList />
                             :
                             <EmptyCart />
                     }

@@ -65,3 +65,12 @@
         color: rgb(253, 186, 116);
     }
 }
+
+/* media query for 640px max screen */
+@media screen and (max-width: 640px) {
+    .loginButton {
+        color: #000;
+        font-size: 12px;
+        text-decoration: underline;
+    }
+}
