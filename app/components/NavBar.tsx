@@ -19,19 +19,19 @@ export default function NavBar({ openLoginModal, showLoginModal }: { openLoginMo
   }
 
   return (
-    <nav onMouseOver={handleOnMouseOver} className=' bg-orange-600'>
+    <nav onMouseOver={handleOnMouseOver} className=' bg-orange-400 md:bg-orange-600'>
       <ul className="flex flex-col md:flex-row w-full text-white">
         <div className="flex flex-row">
-          <li className="bg-orange-400 flex flex-col flex-none text-2xl font-bold rounded-tr-full rounded-br-full">
-            <Link className="px-6 py-5" href='/'>Ecommerce.com</Link>
+          <li className="bg-orange-600 rounded-r-full md:rounded-none md:bg-orange-400 flex flex-col order-2 md:order-1 flex-none text-lg md:text-2xl font-bold md:rounded-tr-full md:rounded-br-full">
+            <Link className="px-3 py-3 md:px-6 md:py-5" href='/'>Ecommerce.com</Link>
           </li>
-          <li className="flex flex-none items-center px-4">
+          <li className="bg-orange-600 flex flex-none order-1 md:order-2 items-center">
             <MenuButton showSideBar={showSideBar} openSideBar={openSideBar} />
             {
               showSideBar && <SideBar closeSideBar={closeSideBar} />
             }
           </li>
-          <li className=" list-item md:hidden">
+          <li className="bg-orange-400 order-3 list-item md:hidden">
             <ul className="h-full">
               <div className="h-full">
                 <li className="h-full">
